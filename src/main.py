@@ -4,8 +4,8 @@ import xml.sax
 
 # Random comment
 # High: OS_Access_Violation
-path = sys.stdin.readline()[:-1]
-os.remove(path)
+#path = sys.stdin.readline()[:-1]
+#os.remove(path)
 
 # Medium
 class TestHandler(xml.sax.ContentHandler):
