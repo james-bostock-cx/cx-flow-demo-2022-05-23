@@ -45,6 +45,8 @@ jobs:
         checkmarx_client_secret: ${{ secrets.CHECKMARX_CLIENT_SECRET }}
         scanners: sast
         params: >-
+          --logging.level.com.checkmarx=DEBUG
+          --logging.level.com.checkmarx.sdk=DEBUG
           --namespace=${{ github.repository_owner }}
           --repo-name=${{ github.event.repository.name }}
           --branch=${{ github.ref }}
